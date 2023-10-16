@@ -8,7 +8,7 @@ export const MenuRight = () => {
         <li>
           <a href="#application">
             <IconPointerPlus stroke={2} size={22} color='#84cc16' />
-            <p className='font-medium'>Aplicações</p>
+            <p className='font-medium text-slate-300'>Aplicações</p>
           </a>
         </li>
       </ul>

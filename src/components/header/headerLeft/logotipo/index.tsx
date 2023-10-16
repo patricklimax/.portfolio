@@ -5,7 +5,7 @@ export const Marca = () => {
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      width="20"
+      width="14"
       viewBox="0 0 1278 2152"
       preserveAspectRatio="xMidYMid meet">
       <g transform="translate(0.000000,2152.000000) scale(0.100000,-0.100000)">
@@ -24,14 +24,13 @@ export const Marca = () => {
 
 export const Logotipo = () => {
   return (
-    <div className="flex items-center justify-center text-slate-300 text-2xl">
+    <div className="flex justify-between items-center text-slate-300">
       <a
-        className="flex justify-between items-center gap-1"
-        href="https://patricklima.vercel.app/"
-        target='_blank'>
-        <div className="fontFamily">WEB</div>
-        <Marca/>
-        <div className="fontFamily">APP</div>
+        href="https://devlimax.vercel.app/"
+        target='_blank'
+        className="flex items-center justify-center gap-1.5 bg-slate-800 p-2 py-1 rounded">
+        <Marca />
+        <div className="fontFamily text-2xl">DEV</div>
       </a>
     </div>
   );
