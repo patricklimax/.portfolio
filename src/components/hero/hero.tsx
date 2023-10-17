@@ -1,5 +1,5 @@
 import { HeroPattern } from './heroPattern/heroPattern';
-import { HeroSVG3 } from './heroSvgImg/herosvg';
+import { HeroSvg } from './heroSvgImg/herosvg';
 import {
   IconArrowNarrowRight,
   IconBrandGithub,
@@ -8,23 +8,22 @@ import {
 } from '@tabler/icons-react';
 import { HardSkills } from '../hardSkills';
 import { Anchor } from '../anchor';
-import { MediaSocial } from '../mediaSocial';
 
 export const Hero = () => {
   return (
-    <section className="w-full text-[#07090e] relative pt-16" id="hero">
+    <section className="w-full relative pt-16" id="hero">
       <HeroPattern />
-      <div className="flex flex-col md:flex-row justify-between gap-2 md:pt-12">
-        <div className="w-full md:w-1/2 flex justify-center items-center">
-          <HeroSVG3 />
+      <div className="flex flex-col md:flex-row justify-between md:mt-12 p-2 gap-2">
+        <div className="md:w-1/2 flex justify-center items-center">
+          <HeroSvg />
         </div>
-        <div className="w-full md:w-1/2 flex flex-col items-center justify-center gap-6" id="heroRight">
-          <div className="w-full flex flex-col gap-2 text-center" id="descrition">
+        <div className="md:w-1/2 flex flex-col items-center justify-center gap-6" id="heroRight">
+          <div className="flex flex-col gap-2 text-center" id="descrition">
             <p>Olá! Meu nome é...</p>
             <p className='flex gap-1 items-center justify-center'>
-              <span className="font-bold text-2xl">Patrick</span>
+              <span className="font-bold text-2xl text-[#42e26f]">Patrick</span>
               <span>desenvolvedor</span>
-              <span className="font-bold text-2xl">Frontend</span>
+              <span className="font-bold text-2xl text-[#42e26f]">Frontend</span>
             </p>
             <p>
               ...apaixonado por{' '}
@@ -32,24 +31,21 @@ export const Hero = () => {
             </p>
           </div>
           <HardSkills />
-          <div id="contact" className="w-full flex items-center justify-center gap-10 md:justify-between md:mt-10">
-            <a href=''
-              target="_blank"
-              rel="noopener noreferrer"
-              className="py-1.5 px-3 flex items-center justify-center gap-2 text-sm rounded text-slate-300 bg-[#07090e] font-medium cursor-pointer transition-all duration-1000 hover:bg-[#07090eee] hover:text-white">
-              <p>Contato</p>
-              <IconArrowNarrowRight color="#cbd5e1" stroke={2} size={22} />
-            </a>
+          <div id="contact" className="w-full flex items-center justify-between md:mt-10">
+            <Anchor
+              title='Contato'
+              href={'https://wa.me/5598983342518'}
+              icon={<IconArrowNarrowRight stroke={1.5} size={25} />} />
             <div className="flex gap-2 items-center justify-center ">
-              <MediaSocial
-                href={'https://github.com/patricklimax'}
-                icon={<IconBrandGithub stroke={2} size={22} color="#cbd5e1" />} />
-              <MediaSocial
+              <Anchor
                 href={'https://www.linkedin.com/in/patricklimax/'}
-                icon={<IconBrandLinkedin stroke={2} size={22} color="#cbd5e1" />} />
-              <MediaSocial
+                icon={<IconBrandLinkedin stroke={1.5} size={25} />} />
+              <Anchor
+                href={'https://github.com/patricklimax'}
+                icon={<IconBrandGithub stroke={1.5} size={25} />} />
+              <Anchor
                 href={'https://www.instagram.com/patricklimax/'}
-                icon={<IconBrandInstagram stroke={2} size={22} color="#cbd5e1" />} />
+                icon={<IconBrandInstagram stroke={1.5} size={25} />} />
             </div>
           </div>
         </div>

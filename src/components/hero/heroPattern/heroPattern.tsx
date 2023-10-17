@@ -5,8 +5,8 @@ export function HeroPattern() {
     <svg
       className="w-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10"
       // id="hero"
-      // width="1200"
-      // height="479"
+      width="1200"
+      height="479"
       viewBox="0 0 1200 479"
       fill="none"
       xmlns="http://www.w3.org/2000/svg">

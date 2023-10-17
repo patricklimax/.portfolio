@@ -16,7 +16,7 @@ import {
 
 export const HardSkills = () => {
   return (
-    <div className="w-full flex flex-wrap gap-2" id="skills">
+    <div className="w-full flex items-center justify-center flex-wrap gap-2" id="skills">
       <Skill name={'HTML5'} icon={<IconBrandHtml5 size={20} stroke={2} />} />
       <Skill name={'CSS3'} icon={<IconBrandCss3 size={20} stroke={2} />} />
       <Skill name={'Tailwind'} icon={<IconBrandTailwind size={20} stroke={2} />} />
