@@ -5,13 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-<<<<<<< HEAD
-  box-shadow: 0 5px 50px -12px #334155b3 ;
-=======
   box-shadow: 0 5px 50px -12px #42e26fb3 ;
   border-bottom-right-radius: 0.375rem;
   border-bottom-left-radius: 0.375rem;
->>>>>>> develop
   background-color: #07090e;
 }
 

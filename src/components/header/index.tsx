@@ -5,18 +5,13 @@ import { IconPointerPlus } from '@tabler/icons-react';
 
 export const Header = () => {
   return (
-<<<<<<< HEAD
-    <header className="header fixed z-40 top-0 left-1/2 -translate-x-1/2 text-slate-300 rounded">
-      <MenuLeft />
-      <MenuRight />
-=======
     <header className="header fixed z-40 top-0 left-1/2 -translate-x-1/2">
       <Logotipo/>
       <nav>
         <ul className='flex items-center gap-2'>
           <li>
             <a href="#application">
-              <span className='iconNav'>
+              <span className='text-[#42e26f]'>
                 <IconPointerPlus stroke={2} size={22} />
               </span>
               <p className='font-medium'>Aplicações</p>
@@ -24,7 +19,6 @@ export const Header = () => {
           </li>
         </ul>
       </nav>
->>>>>>> develop
     </header>
   );
 };

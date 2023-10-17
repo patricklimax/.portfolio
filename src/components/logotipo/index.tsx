@@ -5,11 +5,7 @@ export const Marca = () => {
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-<<<<<<< HEAD:src/components/header/headerLeft/logotipo/index.tsx
-      width="14"
-=======
       width="18"
->>>>>>> develop:src/components/logotipo/index.tsx
       viewBox="0 0 1278 2152"
       preserveAspectRatio="xMidYMid meet">
       <g transform="translate(0.000000,2152.000000) scale(0.100000,-0.100000)">
@@ -28,23 +24,11 @@ export const Marca = () => {
 
 export const Logotipo = () => {
   return (
-<<<<<<< HEAD:src/components/header/headerLeft/logotipo/index.tsx
-    <div className="flex justify-between items-center text-slate-300">
-      <a
-        href="https://devlimax.vercel.app/"
-        target='_blank'
-        className="flex items-center justify-center gap-1.5 bg-slate-800 p-2 py-1 rounded">
-        <Marca />
-        <div className="fontFamily text-2xl">DEV</div>
-      </a>
-    </div>
-=======
     <a
       href='https://devlimax.vercel.app/' target='_blank'
       className="flex items-center gap-1 text-slate-200 text-2xl px-2">
       <Marca />
       <div className="fontFamily">DEV</div>
     </a>
->>>>>>> develop:src/components/logotipo/index.tsx
   );
 };
