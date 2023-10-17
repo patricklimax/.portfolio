@@ -7,7 +7,7 @@ import { Footer } from '@/components/footer';
 
 export default function Home() {
   return (
-    <main className="mainBox mx-auto min-h-screen px-2 text-slate-400 relative">
+    <main className="mainBox mx-auto min-h-screen px-2 relative">
       <Header />
       <Hero />
       <ProjectCover />
